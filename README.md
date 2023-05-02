@@ -17,3 +17,4 @@ Código para la prueba técnica para puesto de Software Engineer en CMM Universi
 - [Typescript]
 - [MUI]
 - [Cypress]
+- [TailwindCSS]
