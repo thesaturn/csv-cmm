@@ -1,0 +1,36 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["views"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Registro {
+  id              Int    @id @default(autoincrement())
+  name            String @db.VarChar(255)
+  institucion     String @db.VarChar(255)
+  cargo           String @db.VarChar(255)
+  pais            String @db.VarChar(100)
+  rol             String @db.VarChar(100)
+  idioma          String @db.VarChar(100)
+  topicos_sesion1 String @db.VarChar(100)
+  otros_sesion1   String @db.VarChar(100)
+  topicos_sesion2 String @db.VarChar(100)
+  otros_sesion2   String @db.VarChar(100)
+  topicos_sesion3 String @db.VarChar(100)
+  otros_sesion3   String @db.VarChar(100)
+  topicos_sesion4 String @db.VarChar(100)
+  otros_sesion4   String @db.VarChar(100)
+}
+
+view aggregates {
+  id                 Int @unique
+  total              BigInt
+  institucion_uchile BigInt
+  promedio_uchile    Decimal @db.Decimal
+
+
+}
