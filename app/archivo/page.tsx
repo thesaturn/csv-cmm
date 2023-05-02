@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Card from "../component/Card"
-import Alert  from "../component/Alert";
 import { InferGetStaticPropsType,GetStaticProps } from 'next';
 
 async function apiData() {
