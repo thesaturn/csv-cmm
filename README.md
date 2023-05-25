@@ -2,7 +2,8 @@
 
 ## Detalles Iniciales
 
-Código para la prueba técnica para puesto de Software Engineer en CMM Universidad de Chile.
+Código para demostración, hecho con ReactJS y NodeJS entre otras tecnologías detalladas a continuación.
+Es una simple app que admite un Archivo CSV y muestra datos estadísticos en base a este.
 
 ## Consideraciones
 
